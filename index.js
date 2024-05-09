@@ -12,7 +12,7 @@ const config = {
       "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8", 
       "Accept-Encoding": "gzip, deflate, br", 
       "Accept-Language": "en-US,en;q=0.5", 
-      "Host": "httpbin.org", 
+      "Host": "amazon.com.br", 
       "Sec-Fetch-Dest": "document", 
       "Sec-Fetch-Mode": "navigate", 
       "Sec-Fetch-Site": "cross-site", 
@@ -31,15 +31,12 @@ const app = express();
 try {
   const data = await
       axios.get(url,config.headers);
-  const $ = cheerio.load(data);
 
-
-    
 } catch (error) {
   console.log(error);
 }
 
-app.listen(PORT,()=>console.log(`listing on port ${PORT}`) )
+app.listen(PORT,() => console.log(`listing on port ${PORT}`) );
 
 
 
