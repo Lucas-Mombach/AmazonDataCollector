@@ -24,8 +24,8 @@ const config = {
     }
   };
 
-
-const url = 'https://www.amazon.com.br/s?k=liquidificador';
+const keyword;
+const url = `https://www.amazon.com.br/s?k=${keyword}`;
 const PORT = process.env.PORT || 4000;
 //const app = express();
 
@@ -40,29 +40,17 @@ async function fetchData(){
     .map((_, product) => { 
       const $product = $(product); 
       const title = $product.find('span.a-size-base-plus.a-color-base.a-text-normal').text(); 
-
-      // const rating = $product.find('a').text();
-      // const numberOfReviews = $product.find('a').text();
-      // const imageUrl = $product.find('a').attr('href');
+      const rating = $product.find('div.a-section.a-spacing-none.a-spacing-top-micro > div > span').attr('aria-label');
+      const numberOfReviews = $product.find('div.a-section.a-spacing-none.a-spacing-top-micro > div.a-size-small').children('span').last().attr('aria-label');
+      const imageUrl = $product.find('div.a-section.aok-relative.s-image-square-aspect> img.s-image').attr('src');
       
       
 
 
-      // return {'title': title, 'rating': rating, 'numberOfReviews': numberOfReviews, 'imageUrl': imageUrl} 
+      return {'title': title, 'rating': rating, 'numberOfReviews': numberOfReviews, 'imageUrl': imageUrl} 
 
-      return {'title': title};
     }) 
     .toArray();
-    
-    //just to see what axios is catching
-
-    // let data = htmlData.data;
-    // fs.writeFile('dataHTML.txt', data, (err) => {
-    // // In case of a error throw err.
-    //   if (err) throw err;
-    //   })
-    
-
     console.log(products);
 
   } catch (error) {
