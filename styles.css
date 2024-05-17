@@ -42,3 +42,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.footer{
+  position: relative;
+  max-width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer div{
+  flex: 1;
+}
+
+footer{
+  display: flex;
+  width: 995px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #f4f4f4;
+}
