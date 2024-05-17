@@ -2,12 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Amazon Scrapper</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div class="title-and-subtitle">
+      <div class="title">
+        <h1>Amazing Amazon Product Scrapper</h1>
+      </div>
+      <div>
+        <h2>
+          Any item in mind? Colect some amazon products data about it
+        </h2>
+      </div>
+    </div>
+    <div class="form">
+      <form id="search-form">
+        <input type="text" id="search-input" name="search-input" placeholder="Enter your search term">
+        <div>
+          <button type="submit">Scrap</button>
+        </div>
+      </form>
+    </div>
+    <div class="results">
+      <p>Search for a product and the results will appear here.</p>
+    </div>
+    <div class="footer">
+      <footer>
+        <div class="signature">
+          <p>Build by Lucas Mombach</p>
+        </div>
+        <div class="github">
+          <a href="">github</a>
+        </div>
+        <div class="linkedin">
+          <a href="">linkedin</a>
+        </div>
+      </footer>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
