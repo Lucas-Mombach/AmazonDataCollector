@@ -52,8 +52,15 @@ a {
   text-decoration: none;
 }
 
+h1{
+  font-size: larger;
+  font-weight: bold;
+}
+h2{
+  font-size: medium;
+}
 .footer{
-  position: relative;
+  position:relative;
   max-width: 1340px;
   margin-right: auto;
   margin-left: auto;
@@ -62,11 +69,74 @@ a {
 footer{
   display: flex;
   width: 995px;
-  margin-top: 50px;
+  margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 32px;
+  padding-top: 3%;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   border-top: 1px solid #f4f4f4;
+}
+.body{
+  display: flex;
+}
+
+.content{
+  /*Includes Title,Subtitle,Results */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  /* Margin */
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.hero{
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.title{
+
+  width: 35%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; 
+  
+}
+
+.results{
+
+  background-color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Padding */
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+
+  /* Margin */
+  margin-top: 5%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+
 }
