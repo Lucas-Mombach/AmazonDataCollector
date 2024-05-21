@@ -109,6 +109,27 @@ form{
   flex-direction: row;
 }
 
+#search-input{
+  height: 50px;
+  margin-right: 10px;
+  padding: 0 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  border: 0 solid #000;
+  background-color: #f4f4f4;
+}
+
+button{
+  position: relative;
+  height: 50px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  border: 0 solid #000;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
 .title{
 
   width: 30%;
