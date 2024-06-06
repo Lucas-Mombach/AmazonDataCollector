@@ -13,5 +13,32 @@ form.addEventListener("submit", (e) => {
     alert("Our complicated algorithm is working, please wait");
   }
   
+  try {
+    fetch('/api/scrape', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ searchInput: keyword.value })    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Clear the previous results
+      resultElement.innerHTML = '';
+
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      resultElement.textContent = 'An error occurred. Please try again.';
+    });
+  
+  } catch (error) {
+    console.log(error);
+  }
+  
   keyword.value = "";
 });
