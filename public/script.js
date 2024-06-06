@@ -30,6 +30,22 @@ form.addEventListener("submit", (e) => {
       // Clear the previous results
       resultElement.innerHTML = '';
 
+      // Iterate over the data array and create HTML for each item
+      data.forEach(item => {
+        let { title, rating, numberOfReviews, imageUrl } = item;
+
+        let newResult = `
+          <div class="result-item">
+            <h2>Title: ${title}</h2>
+            <p>Rating: ${rating}</p>
+            <p>Number of Reviews: ${numberOfReviews}</p>
+            <p>Image URL: ${imageUrl} </p>
+            <br>
+          </div>
+        `;
+
+        resultElement.innerHTML += newResult;
+      });
     })
     .catch(error => {
       console.error('Error:', error);
