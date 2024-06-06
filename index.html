@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/public/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Scrapper</title>
   </head>
@@ -18,17 +18,17 @@
         </div>
       
         <div class="form">
-          <form action="/api/scrape" method="get" id="search-form">
-            <input type="text" id="search-input" name="search-input" placeholder="Enter your search term">
-            <div class="w-button">
-              <button type="submit">Scrap</button>
+          <form id="search-form">
+            <input type="text" id="search-input" name="keyword" placeholder="Enter your search term">
+            <div class="w-button"> 
+              <button type="submit" id="w-button">Scrap</button>
             </div>
           </form>
         </div>
       </div>
 
       <div class="results">
-        <p>Search for a product and the results will appear here.</p>
+        <p id="result">Search for a product and the results will appear here.</p>
       </div>
 
     </div>
@@ -46,6 +46,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/index.js"></script>
+    <script src="/public/index.js"></script> 
   </body>
 </html>
