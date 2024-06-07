@@ -1,8 +1,45 @@
-# React + Vite
+# Amazon Scrapper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+This project provides a minimalistic interface for searching through Amazon.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
+
+- Vanilla Javascript
+- Node.js
+- Express
+- CSS3
+- HTML5
+
+## Quick Start
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone git@github.com:Lucas-Mombach/AmazonDataCollector.git
+cd project_ai_summarizer
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+Run the project locally:
+
+```bash
+npm run start
+```
