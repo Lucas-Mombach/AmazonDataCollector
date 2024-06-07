@@ -24,6 +24,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+  height: 100%;
+}
 body {
 	line-height: 1;
 }
@@ -48,6 +51,9 @@ body{
   color: #2e2e2e;
   text-decoration: none;
   font-size: 16px; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 a {
@@ -62,31 +68,22 @@ h1{
   font-weight: 500;
 }
 
-.footer{
- 
-  
-  margin-right: auto;
-  margin-left: auto;
-}
-
 footer{
   display: flex;
   width: 95%;
-  position: absolute;
+  
+  position: relative;
+  margin-top: auto;
   margin-right: auto;
   margin-left: auto;
   padding-top: 1%;
   padding-bottom: 1%;
 
   bottom: 0;
-
+ 
   justify-content: space-around;
   align-items: flex-end;
   border-top: 1px solid #f4f4f4;
-}
-
-.body{
-  display: flex;
 }
 
 .content{
