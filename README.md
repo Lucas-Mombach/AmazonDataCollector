@@ -38,7 +38,7 @@ Install the project dependencies using npm:
 ```bash
 npm install
 ```
-Run the project locally:
+**Running the Project**
 
 ```bash
 npm run start
