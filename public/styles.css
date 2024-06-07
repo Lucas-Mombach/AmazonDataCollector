@@ -79,7 +79,6 @@ footer{
   padding-top: 1%;
   padding-bottom: 1%;
 
-  bottom: 0;
  
   justify-content: space-around;
   align-items: flex-end;
@@ -89,13 +88,13 @@ footer{
 .content{
   /*Includes Title,Subtitle,Results */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
-
+  flex-grow: 1;
   /* Margin */
   margin-top: 5%;
   margin-right: 5%;
-  margin-bottom: 5%;
+  
   margin-left: 5%;
 }
 
