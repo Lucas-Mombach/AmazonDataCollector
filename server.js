@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import {scrapeProducts} from "./api/index.js"
+import {scrapeProducts} from "./api/scrapeProducts.js"
 import path from "path";
 import { fileURLToPath } from 'url';
 
