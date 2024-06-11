@@ -3,7 +3,9 @@ import cors from "cors"
 import {scrapeProducts} from "./api/scrapeProducts.js"
 import path from "path";
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
+dotenv.config()
 
 const app = express();
 //access the current file's path and directory
@@ -24,7 +26,7 @@ app.use("/", (req,res) => { //serve the front page
 app.use("*",(req,res) =>
   res.status(404).json ({error:"not found"}));
 
-const port  = 3000;
+const port  = process.env.PORT || 3000;
 app.listen(port,() => { // starts server listen on port 3000
   console.log(`listening on port ${port}`);
 });
