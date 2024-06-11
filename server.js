@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.json()); // parses incoming requests with JSON payloads
 app.use(cors());
-app.post("/api/scrape",scrapeProducts);
+app.get("/api/scrape",scrapeProducts);
 
 app.use("/public", express.static(__dirname + "/public")); // serve static components aka index.js and styles.css
 

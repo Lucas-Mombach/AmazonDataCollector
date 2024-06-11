@@ -14,12 +14,12 @@ form.addEventListener("submit", (e) => {
   }
   
   try {
-    fetch('/api/scrape', {
-      method: 'POST',
+    fetch(`/api/scrape?keyword=${keyword.value}`, {
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ searchInput: keyword.value })    })
+      }
+          })
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');

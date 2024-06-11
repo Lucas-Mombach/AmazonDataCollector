@@ -2,7 +2,7 @@ import axios from "axios"
 import cheerio from "cheerio"
 
 export async function scrapeProducts (req, res){
-  const keyword = req.body.searchInput;
+  const keyword = req.query.keyword;
   const config = {
     
       "headers": {
